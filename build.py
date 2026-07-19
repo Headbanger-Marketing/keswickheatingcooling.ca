@@ -21,7 +21,7 @@ PHONE_DISPLAY = "(905) 476-8231"
 PHONE_TEL     = "+19054768231"
 EMAIL         = "contact@keswickheatingcooling.ca"
 ADDR_STREET   = "24201 Woodbine Ave"
-ADDR_LOCALITY = "Keswick"
+ADDR_LOCALITY = "keswick"
 ADDR_REGION   = "ON"
 ADDR_POSTAL   = "L4P 3E9"
 # -----------------------------------------------------------------------
@@ -93,11 +93,7 @@ LOGO_MARK = '''<svg class="brand__mark" viewBox="0 0 48 48" fill="none" xmlns="h
 def brand(footer=False):
     cls = "brand footer-brand" if footer else "brand"
     return f'''<a class="{cls}" href="/" aria-label="{SITE_NAME} home">
-      {LOGO_MARK}
-      <span class="brand__text">
-        <span class="brand__name">{CITY}</span>
-        <span class="brand__tag">Heating &amp; Cooling</span>
-      </span>
+      <img class="brand__logo" src="/assets/img/logo.png" alt="{SITE_NAME}" loading="eager" decoding="async">
     </a>'''
 
 # ------------------------------------------------------------------ NAV / SERVICES DATA
@@ -278,7 +274,7 @@ def head(title, desc, path, schema_blocks=None, og_type="website", robots="index
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{canonical}">
 <meta name="robots" content="{robots}">
-<meta name="theme-color" content="1a2e1a">
+<meta name="theme-color" content="#102040">
 <meta property="og:type" content="{og_type}">
 <meta property="og:site_name" content="{SITE_NAME}">
 <meta property="og:title" content="{title}">
